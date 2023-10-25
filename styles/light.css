@@ -37,3 +37,13 @@
     display: none;
   }
 }
+
+@media (prefers-color-scheme: light) and (min-width: 768px) {
+  :root {
+    --focus-shadow-color: #ff8dcb;
+  }
+
+  .page.theme_light {
+    --focus-shadow-color: #ff8dcb;
+  }
+}
