@@ -2,3 +2,18 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* --page-padding: clamp(0.625rem, 0.0271rem + 2.551vw, 1.25rem); */
+  --text-color: #f1b2ce;
+  --background-color: #000028;
+  --background-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --accent-button-color: #ff0070;
+  --accent-text-color: #000028;
+  --button-hover: rgba(255, 0, 112, 0.4);
+  --focus-text-color: #db00ff;
+  --focus-shadow-color: #ff0070;
+  --page-padding: 10px;
+  --segment-padding: 40px;
+}
