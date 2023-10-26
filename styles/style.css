@@ -5,17 +5,9 @@
   color: var(--text-color, #f1b2ce);
   font-size: 18px;
   font-weight: 400;
-  font-family: IBM Plex Mono, monospace;
+  font-family: var(--text-font-family), monospace;
   line-height: 130%;
-  background-color: var(--background-color);
-  background-image: var(
-    --background-image,
-    url(../images/cover-image-dark.png)
-  );
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background: var(--background-image, url(../images/cover-image-dark.png)) center / cover no-repeat fixed var(--background-color)
 }
 
 .header {
@@ -75,10 +67,12 @@
   width: 70px;
   height: 26px;
   padding: 0px 13px;
+  transition: 0.5s;
 }
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--button-hover);
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
@@ -92,6 +86,7 @@
 .header__theme-menu-button_active {
   background: transparent;
   border: 1px solid var(--accent-button-color);
+  pointer-events: none;
 }
 
 .header__title {
@@ -124,6 +119,7 @@
 }
 
 .header__rec-decoration {
+  display: var(--rec-display-mode);
   position: absolute;
   top: var(--page-padding);
   right: calc(28px + var(--page-padding));
@@ -183,12 +179,14 @@
 }
 
 .card-link {
-  text-shadow: 2px 2px 0px var(--focus-shadow-color);
+  border: 1px solid transparent;
+  text-shadow: 2px 2px 0px var(--accent-color);
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .card-link:hover {
-  text-decoration-line: underline;
+  border-bottom: 1px solid var(--text-color);
 }
 
 .card-link:focus {

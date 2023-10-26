@@ -4,7 +4,7 @@
 */
 
 :root {
-  /* --page-padding: clamp(0.625rem, 0.0271rem + 2.551vw, 1.25rem); */
+  --text-font-family: "IBM Plex Mono";
   --text-color: #f1b2ce;
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
@@ -16,4 +16,5 @@
   --focus-shadow-color: #ff0070;
   --page-padding: 10px;
   --segment-padding: 40px;
+  --rec-display-mode: block;
 }

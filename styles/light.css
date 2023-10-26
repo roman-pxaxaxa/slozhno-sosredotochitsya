@@ -18,6 +18,7 @@
   --button-hover: rgba(50, 49, 45, 0.4);
   --focus-text-color: #ffc2e6;
   --focus-shadow-color: #ff0070;
+  --rec-display-mode: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -31,14 +32,11 @@
     --button-hover: rgba(50, 49, 45, 0.4);
     --focus-text-color: #ffc2e6;
     --focus-shadow-color: #ff0070;
-  }
-
-  .header__rec-decoration {
-    display: none;
+    --rec-display-mode: none;
   }
 }
 
-@media (prefers-color-scheme: light) and (min-width: 768px) {
+@media (prefers-color-scheme: light) and (max-width: 1023px) {
   :root {
     --focus-shadow-color: #ff8dcb;
   }
